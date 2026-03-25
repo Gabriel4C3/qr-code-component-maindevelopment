@@ -1,141 +1,103 @@
-/* CSS Reset */
-*,*::before,*::after {
-    box-sizing: border-box;
-}
-
-@media (max-width: 375px) {
-    /* Mobile: 375px */
-    .attribution {
-        font-size: 8px;
-        max-width: 250px;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@media (min-width: 375px) and (max-width: 1440px) {
+    main{
+        max-width: 90%;
     }
-    img {
-        max-width: 60%;
-        margin: 5px;
-    }
-}
-
-@media (min-width: 1440px) {
-    /* Desktop: 1440px */
-    .attribution {
-        font-size: 12px;
-        max-width: 400px;
-    }
-    img {
-        max-width: 80%;
-    }
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;}
-
-body {
-    
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400, 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     
 }
-
-img {
-    box-shadow: 1px 1px 1px 2px hsl(217, 20%, 55%);
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-left: 8px;
-    margin-right: 8px;
-    margin-bottom: 20px;
-    max-width: 86%;
-    height: auto;
-
-    ;
-}
-picture,
-video,
-canvas,
-svg {
+body{
+    background-color: hsl(212, 45%, 89%);
     display: block;
-    max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select,
-
-
-p, h1, h2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    margin: 2px auto;
-    padding: 0 10px;
-    width: 100%;
-    max-width: 600px;
-}
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 100vh;
 
-p {
-    font-size: small;
-}
-
-h1 {
-    text-transform: uppercase;
-    font-size: large;
-    font-family: outfit, sans-serif;
-}
-
-h2 {
-    font-size: medium;
-}
     
-h3,
-h4,
-h5,
-h6 {
-    overflow-wrap: break-word;
 }
+main{
+    
+   background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+     /* reduzido de 80% */
+    height: auto; /* ajusta ao conteúdo, removendo altura fixa */
+    margin-top: 0;
+     max-height: 400px; /* adicionado para limitar altura */
+    margin-top: 0;
+    max-width: 200px; /* adicionado para limitar largura */
+     margin-left: auto; /* centraliza horizontalmente */
+    margin-right: auto; /* centraliza horizontalmente */
+    margin-top: auto;
+    margin-bottom: auto;
 
-#root,
-#__next {
-    isolation: isolate;
+
+
+    
 }
-
-/* Background */
-body {
-    background-color: hsl(216, 66%, 73%);
-}
-
-/* Center attribution div */
 div{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    font-weight: 100;
     
 }
-.attribution {
-    box-shadow: 2px 2px 2px 2px hsl(217, 11%, 55%);
-    background-color: hsl(212, 45%, 89%);
-    border-radius: 20px;
-    font-size: 10px;
+.descrição{
     font-family: 'Outfit', sans-serif;
-    font-weight: 400, 700;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px auto;
-    gap: 3px;
-    max-width: 300px;
+    font-size: 12px;
+    color: hsl(218, 44%, 22%);
     
 }
-a {
-    color: hsl(228, 45%, 44%);
-    text-decoration: none;
+.paragrafo{
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    margin-bottom: 10px;   
+    color: hsl(216, 15%, 48%);
+}
+.titulos{
     font-weight: 700;
-    margin-bottom: 25px;
+    color: hsl(218, 44%, 22%);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}  
+.qr-code{
+    width: 200px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+a{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color:hsl(218, 44%, 22%);
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}
+footer{
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: hsl(220, 15%, 55%);
+   
+
+ 
 }
